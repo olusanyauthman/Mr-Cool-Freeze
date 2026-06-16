@@ -120,7 +120,7 @@ header{
   background: #eaf9ff;
   border-radius: 30px;
   align-items: center;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.199);
   width: 80%;
 }
 
@@ -147,6 +147,24 @@ header{
   border-bottom-right-radius: 30px;
   background-color: #2f6f91;
 }
+
+@media (max-width: 430px){
+  .search{
+    height: 40px;
+    width: 75%;
+  }
+
+  .search input{
+    font-weight: bold;
+    font-size: 16px;
+  }
+
+  .fa-solid.fa-search{
+    font-size: 16px;
+    padding: 12px 13px 12px 11px;
+  }
+
+}
 .in-caro-con{
   display: flex;
   overflow-x: auto;
@@ -169,7 +187,7 @@ header{
 }
 .inf-cards img{
   height: 200px;
-  width: 800px;
+  width: 300px;
 }
 @keyframes spin {
   from{translate: 0;}
@@ -203,10 +221,8 @@ header{
 .recommend-container h3{
   margin-right: auto;
   margin-top: 20px;
-  margin-botto: 10px;
   font-size: 25px;
   display: block;
-  border-botto: #2f6f91 1px solid;
 }
 
 .cards-container{
@@ -223,7 +239,7 @@ header{
 .cards{
   height: 400px;
   padding: 20px;
-  box-shadow: 5px 5px rgba(0, 0, 0, 0.384) , 5px 5px rgba(0, 0, 0, 0.384) inset;
+  box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.384);
   border-radius: 20px;
   background-color: #66c6e8;
 }
@@ -254,6 +270,68 @@ header{
   background-color: #5dafdb;
 }
 
+@media (max-width: 430px){
+  .inf-cards{
+    height: 90px;
+  }
+
+  .inf-cards img{
+    height: 90px;
+    width: 300px;
+  }
+
+  .main-container{
+    padding: 30px 15px 10px 15px;
+  }
+
+  .start-shop{
+    font-size: 20px;
+    color: #050b12;
+  }
+
+  .viewall a{
+    color: #050b12;
+    font-size: 13px;
+  }
+
+  .viewall a:hover{
+    color: #2f6f91;
+  }
+  
+
+  .recommend-container{
+    margin-bottom: 20px;
+  }
+  .recommend-container h3{
+    font-size: 18px;
+    margin-top: 25px;
+  }
+
+  .cards-container{
+    gap: 0.9rem;
+    padding-top: 5px;
+  }
+
+  .cards{
+    height: 220px;
+    padding: 13px;
+  }
+
+  .cards img{
+    height: 160px;
+    margin-bottom: 10px;
+  }
+
+  .cards p{
+    font-size: 13px;
+    margin-bottom: 5px;
+  }
+
+  .cards button{
+    padding: 5px;
+    font-size: 12px;
+  }
+}
 #recommend-container{
   background-color: #086da3;
   padding: 20px 40px 30px 40px;
@@ -262,6 +340,7 @@ header{
 
 #recommend-container h3{
   color: #eaf9ff;
+
 }
 
 #recommend-container .viewall{
@@ -331,6 +410,7 @@ header{
   height: 350px;
 }
 
+
 .news-container{
   padding: 0 40px 100px 40px;
   border-radius: 30px;
@@ -348,6 +428,8 @@ header{
 .news-email{
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.281);
   border-radius: 30px;
+  margin-right: auto;
+  margin-left: auto;
   padding: 20px 15px 20px 15px ;
   display: inline-block;
   background-color: #6ec6e8;
@@ -373,6 +455,7 @@ header{
   border-radius: 15px;
   margin-left: 15px;
 }
+
 
 .app{
   text-align: center;
@@ -453,6 +536,9 @@ header{
   margin-right: 5px;
   color: #eaf9ff;
 }
+.main-links a:hover{
+  background-color: #1a416d;
+}
 
 .fa-brands.fa-facebook{
   color: #eaf9ff;
@@ -496,8 +582,8 @@ header{
 .payment img{
   margin-right: 10px;
   margin-bottom: 10px;
-  height: 150px;
-  width: 300px;
+  height: 100px;
+  width: 200px;
   border-radius: 20px;
   border: 5px solid #086da3;
 }
@@ -510,3 +596,147 @@ footer{
   font-size: 18px;
 }
 
+@media (max-width: 430px){
+  #recommend-container{
+    padding: 10px 15px 10px 15px;
+  }
+
+  #recommend-container h3{
+    font-size: 15px;
+  }
+
+  #recommend-container p{
+    font-size: 15px;
+  }
+
+  #recommend-container img{
+    height: 185px;
+    width: 250px;
+  }
+
+  #recommend-contain{
+    padding: 0 15px;
+  }
+
+  #recommend-contain h3{
+    font-size: 15px;
+  }
+
+  #recommend-contain p{
+    font-size: 15px;
+  }
+
+  #recommend-contain img{
+    height: 185px;
+    width: 250px;
+  }
+  
+  .news-container{
+    padding: 0 15px 60px 15px;
+  }
+  .news-email{
+    width;
+  }
+  .news-email p{
+    font-size: 20px;
+  }
+
+  .news-email input{
+    padding: 8px;
+    border-radius: 10px;
+    font-size: 15px;
+    width: 75%;
+  }
+
+  .news-email .fa-solid.fa-arrow-right{
+    padding: 10px;
+    border: 8px;
+    margin-left: 10px;
+  }
+
+  .app{
+    height: 550px;
+    
+    margin-bottom: 35px;
+  }
+
+  .app img{
+    width: 90%;
+  }
+
+  .app-links{
+    padding: 20px 15px;
+    margin-top: 0;
+    gap: 2rem;
+  }
+
+  .app-links a{
+    padding: 15px 20px;
+    font-size: 13px;
+  }
+
+  .mrcool{
+    padding: 0 15px;
+  }
+
+  .mrcool h2{
+    font-size: 19px;
+    margin-bottom: 10px;
+  }
+
+  .mrcool p{
+    font-size: 12px;
+  }
+
+  .info-container{
+    padding: 30px 15px;
+  }
+  
+  .main-links{
+    margin-bottom: 8px;
+
+  }
+  .main-links a{
+    padding: 6px;
+    font-size: 5px;
+  }
+  
+  .link-product{
+    margin-right: 13%;
+  }
+  .link-product a{
+    font-size: 15px;
+    margin-bottom: 5px;
+  }
+
+  .navigations h2{
+    margin-bottom: 10px;
+    font-size: 19px;
+  }
+
+  .navigations a{
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+  
+  .payment{
+    padding: 0 15px;
+  }
+  .payment h1{
+    font-size: 19px;
+    margin-bottom: 10px;
+  }
+
+  .payment img{
+    height: 40px;
+    width: 80px;
+    border: 1px solid #086da3;
+    border-radius: 8px;
+    margin-right: 0px;
+  }
+
+  footer{
+    padding: 15px;
+    font-size: 10px;
+  }
+}
