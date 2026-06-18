@@ -152,7 +152,7 @@ body{
   z-index: 1000;
   right: 0;
   display: none;
-  transform: translateX(250px);
+  transform: translateX(300px);
   flex-direction: column;
   margin-left: auto;
   height: 100vh;
