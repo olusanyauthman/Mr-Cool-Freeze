@@ -6,8 +6,9 @@
 
 body{
   background-color: #eaf9ff;
+  overflow-x: hidden;
 }
-header{
+.header1{
   display: flex;
   background-color: #2f6f91;
   align-items: center;
@@ -33,6 +34,7 @@ header{
 .list{
   display: flex;
   gap: 1rem;
+  align-items: center;
   list-style: none;
   background-color: #2f6f91;
   align-items: center;
@@ -88,6 +90,7 @@ header{
   background-color: #eaf9ff;
   padding: 12px;
   border-radius: 25px;
+  margin-bottom: 5px;
   margin-right: 10px;
   cursor: pointer;
   border: none;
@@ -108,6 +111,109 @@ header{
   cursor: pointer;
 }
 
+.header{
+  display: flex;
+}
+
+.navbar{
+  display: none;
+  width: 100%;
+  paddin: 5px;
+  border-radius: 30px;
+  margin-top: 30px;
+  background-color: #2f6f91;
+  align-items: center;
+}
+
+.navbar img{
+  margin-left: 3px;
+  height: 50px;
+  widt: 100px;
+  margin-right: auto;
+  
+}
+
+.fa-solid.fa-bars{
+  font-size: 25px;
+  margin-right: 5px;
+  padding: 10px;
+  color: white;
+  cursor: pointer;
+  transition: 0.35s ease;
+}
+
+.fa-solid.fa-bars:hover{
+  color: #6ec6e8;
+}
+
+.sidebar{
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  right: 0;
+  display: none;
+  transform: translateX(250px);
+  flex-direction: column;
+  margin-left: auto;
+  height: 100vh;
+  padding-top: 20px;
+  width: 250px;
+  background-color: #086da3bd;
+  backdrop-filter: blur(20px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.459);
+  border-left: 1px solid rgba(255, 255, 255, 0.623);
+  font-family: Arial, Helvetica, sans-serif;
+  transition: 0.5s ease;
+}
+
+.sidebar .link{
+  text-decoration: none;
+  height: 40px;
+  font-size: 25px;
+  color: white;
+  font-weight: bold;
+  width: 100%;
+  padding-left: 20px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+.sidebar .link:hover{
+  background-color: #6ec6e8;
+  color: #050b12;
+}
+
+.fa-solid.fa-x{
+  margin-left: 20px;
+  font-size: 20px;
+  color: white;
+  padding: 10px;
+  transition: 0.35s ease;
+  margin-bottom: 5px;
+}
+
+.fa-solid.fa-x:hover{
+  border-radius: 10px;
+  color: black;
+  borde: 1px solid white;
+  
+}
+
+.side-lgnbtn{
+  margin-left: 20px;
+  padding: 10px 30px 10px 30px;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: 0.35s ease;
+}
+
+button:hover{
+  scale: 1.1;
+}
 
 .search{
   margin: 20px 20px 20px 0px;
@@ -302,6 +408,7 @@ header{
   .recommend-container{
     margin-bottom: 20px;
   }
+
   .recommend-container h3{
     font-size: 18px;
     margin-top: 25px;
@@ -313,13 +420,13 @@ header{
   }
 
   .cards{
-    height: 220px;
+    height: 200px;
     padding: 13px;
   }
 
   .cards img{
-    height: 160px;
-    margin-bottom: 10px;
+    height: 150px;
+    margin-bottom: 5px;
   }
 
   .cards p{
@@ -502,9 +609,8 @@ header{
 }
 
 .mrcool p{
-  font-size: 18px;
+  font-size: 19px;
   line-height: 1.5;
-  font-weight: lighter;
 }
 
 .info-container{
@@ -610,7 +716,7 @@ footer{
   }
 
   #recommend-container img{
-    height: 185px;
+    height: 170px;
     width: 250px;
   }
 
@@ -627,7 +733,7 @@ footer{
   }
 
   #recommend-contain img{
-    height: 185px;
+    height: 170px;
     width: 250px;
   }
   
@@ -738,5 +844,16 @@ footer{
   footer{
     padding: 15px;
     font-size: 10px;
+  }
+  
+  .header1{
+    display: none;
+  }
+  .navbar{
+    display: flex;
+  }
+
+  .sidebar{
+    display: flex;
   }
 }
